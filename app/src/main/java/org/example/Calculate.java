@@ -8,4 +8,14 @@ public class Calculate {
       return 2000;
     }
   }
+
+  public int getTotalFee(int age, int groupSize) {
+    int individualFee = getIndividualFee(age);
+
+    if (groupSize >= 10) {
+      return individualFee * groupSize * 9 / 10;
+    } else {
+      return individualFee * groupSize;
+    }
+  }
 }
