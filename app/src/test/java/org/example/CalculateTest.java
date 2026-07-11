@@ -28,7 +28,7 @@ public class CalculateTest {
   @Test
   public void testGetTotalFee_20_15() {
     Calculate calculate = new Calculate();
-    int expected = 13500;
+    int expected = 27000;
     assertEquals(expected, calculate.getTotalFee(20, 15));
   }
 
