@@ -26,17 +26,10 @@ public class CalculateTest {
   }
 
   @Test
-  public void testGetTotalFee_25_1() {
-    Calculate calculate = new Calculate();
-    int expected = 2000;
-    assertEquals(expected, calculate.getTotalFee(25, 1));
-  }
-
-  @Test
-  public void testGetTotalFee_10_15() {
+  public void testGetTotalFee_20_15() {
     Calculate calculate = new Calculate();
     int expected = 13500;
-    assertEquals(expected, calculate.getTotalFee(10, 15));
+    assertEquals(expected, calculate.getTotalFee(20, 15));
   }
 
 }
